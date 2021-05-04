@@ -24,6 +24,6 @@ def solution(phone_number):
    for i in range(0, phone_number_len - 4):  # 전화번호 뒷 네자리는 남겨둬야 하므로 0부터 phone_number의 길이에서 4를 뺀것 만큼 for문을 돌려준다.
       phone_number_list[i] = '*'             # for문을 돌면서 phone_number_list의 0번째 위치부터 숫자를 *로 바꾸어준다.
 
-   answer = ('').join(phone_number_list)     # phone_number_list에 는 숫자가 *로 바뀌어진 리스트가 있으므로 join함수를 사용하여 공백 없이 하나의 문자열로 합쳐준다.
+   answer = ('').join(phone_number_list)     # phone_number_list에 는 숫자가 *로 바뀌어진 list가 있으므로 join함수를 사용하여 list를 공백 없이 하나의 문자열로 합쳐준다.
 
    return answer
